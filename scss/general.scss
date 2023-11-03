@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+main{
+    width: 100%;
+    height: 707px;
+
+    .tv__box{
+        height: 707px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        img{
+            width: 800px;
+         z-index: 1;
+        }
+        .background{
+            position: relative;
+            top: 125px;
+            left: 265px;
+            width: 520px;
+            height: 400px;
+            background-color: rgb(131, 131, 131);
+            position: absolute;
+             padding: 15px 15px;
+
+            
+            img{
+                width: 100px;
+                animation-name: dvd;
+                animation-duration: 8s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                     margin-left: 190px;
+                
+            }
+            @keyframes dvd {
+               0%{
+                margin-left: 190px;
+               }
+              25%{
+                margin-left: 400px;
+               margin-top: 140px;
+          
+              }
+              50%{
+                margin-left: 200px;
+               margin-top: 330px;
+          
+              }
+              75%{
+                margin-left: -10px;
+                margin-top: 200px;
+          
+              }
+               100%{
+                margin-left: 190px;
+                margin-top: -10px;
+               }
+            }
+        }
+    }
+   .remote{
+    position: absolute;
+    top: 600px;
+   }
+}
